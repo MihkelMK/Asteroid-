@@ -80,6 +80,8 @@ class Laev(pg.sprite.Sprite):
         pg.sprite.Sprite.__init__(self)
         # Anname LAEV_IMG muutujalt klassile Laev välimuse. (laev.png)
         self.image = LAEV_IMG
+        # Kustutan valge tausta
+        self.image.set_colorkey(VALGE)
         # Leiame laev.png pikslite kaudu klassi Laev suuruse ekraanil.
         self.rect = self.image.get_rect()
         # Ütleme, et selle klassi raadius on 20. See on tehtud, et kokkupõrkamine
